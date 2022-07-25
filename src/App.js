@@ -11,7 +11,7 @@ const App = () => {
          <NavBar/>
         <Profile/>         
     </div>
-  );
+  )
 }
 
 export default App;

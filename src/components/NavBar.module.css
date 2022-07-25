@@ -1,0 +1,18 @@
+.nav {
+  grid-area: n;
+  background-color: rgb(248, 175, 16);
+}
+
+
+.item {
+  color: rgb(255, 254, 255);
+}
+
+.item.active {
+  color: gold;
+}
+
+
+.music {
+  color: fuchsia;
+}

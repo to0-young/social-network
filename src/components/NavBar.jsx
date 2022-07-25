@@ -1,21 +1,22 @@
 import React from 'react';
+import sos from'./NavBar.module.css';
 
-const NavBar = () =>{
+const NavBar = () => {
     return (
-            <nav className='nav'>
-          <div>
+            <nav className={sos.nav}>
+          <div className={sos.item}>
             <a>Profile</a>
           </div>
-          <div>
+          <div className={`${sos.item} ${sos.active}`}>
             <a>Messages</a>
           </div>
-          <div>
+          <div className='item'>
             <a>News</a>
           </div>
-          <div>
+          <div className={sos.music}>
             <a>Music</a>
           </div>
-          <div>
+          <div className='item'>
             <a>Settings</a>
           </div>
         </nav>
