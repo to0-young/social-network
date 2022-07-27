@@ -12,11 +12,10 @@ const MyPosts = () => {
             <button>Add post</button>
         </div>
         
-        <div className={c.item}>
-            <Post/>
-            <Post/>
-            
-            
+        <div className={c.posts}>
+            <Post message='Hi,friend how are you?'/>
+            <Post like='28'/>
+        
         </div>
         </div>
     
@@ -24,3 +23,5 @@ const MyPosts = () => {
 }
 
 export default MyPosts;
+
+
