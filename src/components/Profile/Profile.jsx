@@ -4,7 +4,7 @@ import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
     return (
-        <div className={c.content}>
+        <div>
           <div>
         <img src='https://www.pics4learning.com/images/pics-banner1-1300.jpg'></img>
           </div>
@@ -15,5 +15,4 @@ const Profile = () => {
         </div>
     )
 }
-
-export default Profile; 
+export default Profile;
