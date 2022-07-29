@@ -1,10 +1,9 @@
 import React from 'react';
-import c from './Dialogs.module.css';
 
 const Dialogs = () => {
     return (
         <div>
-            Dialogs
+            Dialogs111
         </div>
     )
 }

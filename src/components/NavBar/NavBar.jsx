@@ -5,22 +5,22 @@ const NavBar = () => {
     return (
             <nav className={sos.nav}>
           <div className={sos.item}>
-            <a>Profile</a>
+            <a href="/profile">Profile</a>
           </div>
           <div className={`${sos.item} ${sos.active}`}>
-            <a>Messages</a>
+            <a href="/dialogs">Messages</a>
           </div>
           <div className='item'>
-            <a>News</a>
+            <a href="#">News</a>
           </div>
           <div className={sos.music}>
-            <a>Music</a>
+            <a href="#">Music</a>
           </div>
           <div className='item'>
-            <a>Settings</a>
+            <a href="#">Settings</a>
           </div>
         </nav>
     )
 }
-
 export default NavBar;
+
