@@ -11,13 +11,13 @@ const NavBar = () => {
             <a href="/dialogs">Messages</a>
           </div>
           <div className='item'>
-            <a href="#">News</a>
+            <a href="/new">News</a>
           </div>
           <div className={sos.music}>
-            <a href="#">Music</a>
+            <a href="/music">Music</a>
           </div>
           <div className='item'>
-            <a href="#">Settings</a>
+            <a href="/settings">Settings</a>
           </div>
         </nav>
     )
