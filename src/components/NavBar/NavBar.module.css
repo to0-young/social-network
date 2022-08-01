@@ -5,11 +5,12 @@
 }
 
 
-.item a {
-  color: white;
+.active {
+  color: gold;
 }
 
-.item a.activeLink {
-  color: gold;
+.item a {
+  color: white;
+  text-decoration: none;
 }
 
