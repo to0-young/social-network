@@ -2,36 +2,36 @@ import React from 'react';
 import s from "./Dialogs.module.css"
 import {NavLink} from "react-router-dom";
 
-const Dialogs = () => {
+const DialogItem = (props) => {
+    return <div className={s.dialog + ' ' + s.active}>
+        <NavLink to={"dialogs/1"}>{props.name}</NavLink>
+    </div>
+}
+
+const Message = (props) => {
+    return <div className={s.dialog}>{props.message}</div>
+}
+
+const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <div className={s.dialog + ' ' + s.active}>
-                    <NavLink to={"dialogs/1"}>Evgeny</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/2"}>Boyko</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/3"}>Derry dog</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/4"}>Yoppi cat</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/5"}>Colli egg</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/6"}>Grisha lopata</NavLink>
-                </div>
-                <div className={s.dialog}>
-                    <NavLink to={"dialogs/7"}>Sebek bebek</NavLink>
-                </div>
+                <DialogItem name="Evgeny" id="1"/>
+                <DialogItem name="Katerina" id="2"/>
+                <DialogItem name="Andrey" id="3"/>
+                <DialogItem name="Oleg" id="4"/>
+                <DialogItem name="Anastasia" id="5"/>
+                <DialogItem name="Vlad" id="6"/>
+                <DialogItem name="Anna" id="7"/>
             </div>
+
             <div className={s.messages}>
-                <div className={s.dialog}>hi</div>
-                <div className={s.dialog}>hi hi</div>
-                <div className={s.dialog}>how? your learnings react?</div>
+                <Message message="Welcome"/>
+                <Message message="how are you doing?"/>
+                <Message message="Hello,world,I`m happy"/>
+                <Message message="Mmmm nice "/>
+                <Message message="go to home"/>
+                <Message message="Brrr cold"/>
             </div>
         </div>
 
