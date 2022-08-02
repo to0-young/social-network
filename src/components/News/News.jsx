@@ -3,8 +3,8 @@ import React from 'react';
 const News = () => {
     return (
         <div>
-            News new new
+            New day everybody
         </div>
     )
 }
-export default News ;
+export default News;
