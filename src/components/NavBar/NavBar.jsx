@@ -7,23 +7,23 @@ const NavBar = () => {
     return (
         <nav className={sos.nav}>
             <div className={sos.item}>
-                <NavLink to="/profile" className={(navData) => navData.isActive ? sos.activeLink : '' }>Profile</NavLink>
+                <NavLink to="/profile" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Profile</NavLink>
             </div>
 
             <div className={sos.item}>
-                <NavLink to="/dialogs" className={(navData) => navData.isActive ? sos.activeLink : '' }>Messages</NavLink>
+                <NavLink to="/dialogs" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Messages</NavLink>
             </div>
 
             <div className={sos.item}>
-                <NavLink to="/news" className={(navData) => navData.isActive ? sos.activeLink : '' }>News</NavLink>
+                <NavLink to="/news" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>News</NavLink>
             </div>
 
             <div className={sos.item}>
-                <NavLink to="/music" className={(navData) => navData.isActive ? sos.activeLink : '' }>Music</NavLink>
+                <NavLink to="/music" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Music</NavLink>
             </div>
 
             <div className={sos.item}>
-                <NavLink to="/settings" className={(navData) => navData.isActive ? sos.activeLink : '' }>Settings</NavLink>
+                <NavLink to="/settings" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Settings</NavLink>
             </div>
         </nav>
     )
