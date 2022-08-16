@@ -3,7 +3,7 @@ import s from "./Dialogs.module.css"
 import DialogItem from "./DialogItem/DialogItem";
 
 const Message = (props) => {
-    return <div className={s.dialog}>{props.message}</div>
+    return <div className={s.dialogs}>{props.message}</div>
 }
 
 let messages = [
