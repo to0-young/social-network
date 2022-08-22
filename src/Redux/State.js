@@ -7,6 +7,11 @@ let state = {
       {id: 2, message: 'The United States of America ?', Like: 555},
       {id: 2, message: 'England is a country that is part of the United Kingdom?', Like: 555},
     ],
+    sidebar: [
+      {id: 1, name: 'Yoko-yoko'},
+      {id: 2, name: 'Angel'},
+      {id: 3, name: 'DarkBot'},
+    ]
 
   },
   dialogsPage: {

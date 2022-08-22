@@ -25,6 +25,10 @@ const NavBar = () => {
             <div className={sos.item}>
                 <NavLink to="/settings" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Settings</NavLink>
             </div>
+
+          <div className={sos.item}>
+                <NavLink to="/friends" className={(navData) => navData.isActive ? sos.activeLink : sos.link }>Friends</NavLink>
+            </div>
         </nav>
     )
 }
