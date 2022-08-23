@@ -5,18 +5,34 @@ import Message from "./DialogItem/Message/Message";
 
 
 const Dialogs = (props) => {
-    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>,);
-    let messagesElements = props.state.messages.map(m => <Message message={m.message}/>);
-    return (
+  let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>,);
+  let messagesElements = props.state.messages.map(m => <Message message={m.message}/>);
 
-        <div className={s.dialogs}>
-            <div className={s.dialogsItems}>
-                {dialogsElements}
-            </div>
-            <div className={s.messages}>
-                {messagesElements}
-            </div>
-        </div>
-    )
+
+  let newPostElement = React.createRef()
+
+  let addPost = () => {
+    let text = newPostElement.current.value;
+    alert(text);
+  }
+  return (
+    <div className={s.dialogs}>
+      <div className={s.dialogsItems}>
+        {dialogsElements}
+      </div>
+      <div className={s.messages}>
+        {messagesElements}
+      </div>
+
+      <div>
+        <textarea ref={newPostElement}></textarea>
+      </div>
+      <div>
+        <button onClick={addPost}>Add post</button>
+      </div>
+
+
+    </div>
+  )
 }
 export default Dialogs;

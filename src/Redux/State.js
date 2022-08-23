@@ -3,9 +3,9 @@ let state = {
   profilePage: {
     posts: [
       {id: 1, message: 'hi', Like: 15},
-      {id: 2, message: 'Hi,friend how are you?', Like: 55},
-      {id: 2, message: 'The United States of America ?', Like: 555},
-      {id: 2, message: 'England is a country that is part of the United Kingdom?', Like: 555},
+      {id: 2, message: 'Hi,friend how are you?', Like: 87},
+      {id: 3, message: 'The United States of America ?', Like: 321},
+      {id: 4, message: 'England is a country that is part of the United Kingdom?', Like: 555},
     ],
     sidebar: [
       {id: 1, name: 'Yoko-yoko'},
@@ -30,6 +30,7 @@ let state = {
       {id: 4, message: 'Wtf?'},
       {id: 5, message: 'good'},
       {id: 6, message: 'world'},
+
     ],
   }
 
