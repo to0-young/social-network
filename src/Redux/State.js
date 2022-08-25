@@ -6,6 +6,7 @@ let state = {
       {id: 2, message: 'Hi,friend how are you?', Like: 87},
       {id: 3, message: 'The United States of America ?', Like: 321},
       {id: 4, message: 'England is a country that is part of the United Kingdom?', Like: 555},
+      {id: 5, message: 'The United Kingdom?', Like: 62},
     ],
     sidebar: [
       {id: 1, name: 'Yoko-yoko'},
@@ -33,7 +34,12 @@ let state = {
 
     ],
   }
+}
 
-
+export let addPost  = (postMessage) => {
+  let postNew = {
+    id:5, message: postMessage, like: 35
+  };
+  state.profilePage.posts.push(postNew);
 }
 export default state;

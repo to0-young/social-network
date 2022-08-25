@@ -10,23 +10,21 @@ const Dialogs = (props) => {
 
 
   let newPostElement = React.createRef()
-
   let addPost = () => {
     let text = newPostElement.current.value;
     alert(text);
+
   }
   return (
+
     <div className={s.dialogs}>
-      <div className={s.dialogsItems}>
-        {dialogsElements}
-      </div>
-      <div className={s.messages}>
-        {messagesElements}
-      </div>
+      <div className={s.dialogsItems}> {dialogsElements}</div>
+      <div className={s.messages}> {messagesElements}</div>
 
       <div>
         <textarea ref={newPostElement}></textarea>
       </div>
+
       <div>
         <button onClick={addPost}>Add post</button>
       </div>
@@ -36,3 +34,4 @@ const Dialogs = (props) => {
   )
 }
 export default Dialogs;
+

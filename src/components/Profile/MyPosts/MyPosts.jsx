@@ -7,12 +7,10 @@ const MyPosts = (props) => {
     props.posts.map(p => <Post message={p.message} like={p.Like}/>);
 
   let newPostElement = React.createRef()
-
   let addPost = () => {
     let text = newPostElement.current.value;
-    alert(text);
+    props.addPost(text);
   }
-
 
   return (
     <div className={s.postBlock}>
@@ -25,7 +23,6 @@ const MyPosts = (props) => {
           <button onClick={addPost}>Add post</button>
         </div>
       </div>
-
       <div className={s.posts}>
         {postsElements}
       </div>
