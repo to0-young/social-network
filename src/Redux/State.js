@@ -1,23 +1,32 @@
 import {rerenderTree} from "../Render";
 
 let state = {
-
   profilePage: {
+
     posts: [
       {id: 1, message: 'hi', Like: 15},
       {id: 2, message: 'Hi,friend how are you?', Like: 87},
       {id: 3, message: 'The United States of America ?', Like: 321},
       {id: 4, message: 'England is a country that is part of the United Kingdom?', Like: 555},
-      {id: 5, message: 'The United Kingdom?', Like: 62},
+
     ],
+    newPostText: 'hey hey',
+
+
     sidebar: [
       {id: 1, name: 'Yoko-yoko'},
       {id: 2, name: 'Angel'},
-      {id: 3, name: 'DarkBot'},
+      {id: 3, name: 'DarkBot'},4
     ]
 
   },
   dialogsPage: {
+    sidebar: [
+      {id: 1, name: 'Yoko-yoko'},
+      {id: 2, name: 'Angel'},
+      {id: 3, name: 'DarkBot'},4
+    ],
+
     dialogs: [
       {id: 1, name: 'Evgeny'},
       {id: 2, name: 'Katerina'},
@@ -44,6 +53,10 @@ export let addPost  = (postMessage) => {
   };
   state.profilePage.posts.push(postNew);
   rerenderTree(state);
+}
 
+export let updatePostNewText  = (newText) => {
+  state.profilePage.newPostText = newText;
+  rerenderTree(state);
 }
 export default state;
